@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'library.apps.LibraryConfig',
     'recipes.apps.RecipesConfig',
+    'cooker.apps.CookerConfig',
 ]
 
 MIDDLEWARE = [
