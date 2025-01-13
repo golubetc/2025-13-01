@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+<h1>Заказы</h1>
+    <a href="{% url 'add_book' %}">добавить заказ</a>
+    {% for order in orders %}
+        <p>{{order.position}}</p>
+        <p>{{order.orders.name}}</p>
+    {% endfor %}
+</body>
+</html>

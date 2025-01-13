@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'library.apps.LibraryConfig',
     'recipes.apps.RecipesConfig',
     'events.apps.EventsConfig',
-    'cooker.apps.CookerConfig'
+    'cooker.apps.CookerConfig',
+    'shop.apps.ShopConfig',
 ]
 
 MIDDLEWARE = [

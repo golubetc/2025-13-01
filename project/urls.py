@@ -24,4 +24,5 @@ urlpatterns = [
     path('events/', include('events.urls')),
     path('recipes/', include('recipes.urls')),
     path('cooker/', include('cooker.urls')),
+    path('shop/', include('shop.urls')),
 ]
