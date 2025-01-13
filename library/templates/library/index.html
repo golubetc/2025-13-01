@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+<h1>Библиотека</h1>
+    <a href="{% url 'add_book' %}">Добавить книгу</a>
+    {% for book in books %}
+        <p>Название: {{ book.title }}</p>
+        <p>Дата публикации: {{ book.publication_date }}</p>
+        {% for genre in book.genre.all %}
+            <p>Жанр: {{ genre.name }}</p>
+        {% endfor %}
+        {% for author in book.author.all %}
+            <p>Автор: {{ author.name }}</p>
+        {% endfor %}
+        <a href="{% url 'update_book' book.id %}">изменить</a>
+        <a href="{% url 'delete_book' book.id %}">удалить</a>
+        <hr>
+    {% endfor %}
+</body>
+</html>

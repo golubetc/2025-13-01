@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить рецепт</title>
+</head>
+<body>
+    <h1>Добавить книгу</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="add_book">
+            {{ form }}
+        </div>
+        <button type="submit">Создать</button>
+    </form>
+</body>
+</html>
