@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+<h1>Библиотека</h1>
+    <a href="{% url 'add_book' %}">Добавить событие</a>
+    {% for book in books %}
+        <p>Название: {{ book.attendee.name }}</p>
+        <p>Дата публикации: {{ book.event.name }}</p>
+<hr>
+    {% endfor %}
+</body>
+</html>
