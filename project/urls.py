@@ -22,4 +22,6 @@ urlpatterns = [
     path('library/', include('library.urls')),
     path('recipes/', include('recipes.urls')),
     path('events/', include('events.urls')),
+    path('recipes/', include('recipes.urls')),
+    path('cooker/', include('cooker.urls')),
 ]
